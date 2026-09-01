@@ -3,13 +3,13 @@ import atletas.*
 object tenis {
 var presupuesto = 200
 var entrenadores = 4
- method presupuesto() = presupuesto 
+ method presupuestoDisiplina() = presupuesto 
  method alturaNesesaria() {}
  method nuevoPresupuesto() {
-  presupuesto =+ (3 * victoria.invitados()) 
+  presupuesto =+ (3 * victoria.cantidadDeinvitados()) 
 } 
-method masEntrenadores(otrosEntrenadores) {
-  entrenadores += otrosEntrenadores
+method cambiarEntrenadores(nuevosEntrenadores) {
+  entrenadores += nuevosEntrenadores
 }
 method entrenadores() = entrenadores 
 }
@@ -17,7 +17,7 @@ method entrenadores() = entrenadores
 object judo { 
     var presupuesto = 120
 method entrenadores() =   2
- method presupuesto() = presupuesto 
+ method presupuestoDisiplina() = presupuesto 
  method alturaNesesaria() {}
  method presupuestoNuevo() {
    presupuesto += comiteOlimpico.medallasDeOro()
@@ -27,5 +27,5 @@ method entrenadores() =   2
 
 object hockey {
 method alturaNesesria() {}
-method preupuesto() = 400 
+method preupuestoDicilina() = 400 
 }
